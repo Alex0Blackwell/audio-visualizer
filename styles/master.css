@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    font-family: arial, "Microsoft YaHei";
+    background-color: #6a718a;
+    color: #fafbff;
+}
+
+#visualizer_wrapper{
+	text-align: center;
+}
+
+#grid-row-container {
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid #464f73;
+  border-radius: 10px;
+  background-color: #e3e9fc;
+}
+
+.grid-item {
+  width: 20px;
+  height: 20px;
+}
