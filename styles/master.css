@@ -1,23 +1,50 @@
-html, body {
-    margin: 0;
-    font-family: arial, "Microsoft YaHei";
-    background-color: #6a718a;
-    color: #fafbff;
+@font-face { font-family: pixel-font; src: url('fonts/pixel-font.ttf'); }
+@font-face { font-family: pixel-font; font-weight: bold; src: url('fonts/pixel-font.ttf');}
+
+body {
+  background-color: #6a718a;
+  color: #fafbff;
+  font-family: pixel-font, sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+}
+h3 {
+  font-size: 40px;
 }
 
 #visualizer_wrapper{
 	text-align: center;
 }
 
-#grid-row-container {
+#grid-backdrop {
+  border: 2px solid #464f73;
+  background-color: #e3e9fc;
+  border-radius: 6px;
   margin: 20px;
   padding: 15px;
-  border: 2px solid #464f73;
-  border-radius: 10px;
-  background-color: #e3e9fc;
+  min-height: 200px;
+}
+
+#grid-row-container {
+  margin: 10px;
 }
 
 .grid-item {
   width: 20px;
   height: 20px;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 9vw;
+  }
+  h3 {
+    font-size: 7vw;
+  }
 }
